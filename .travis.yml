@@ -2,6 +2,7 @@ language: c
 compiler:
   - gcc
 install:
+  - sudo apt-get install -qq automake
   - sudo apt-get install -qq r-base
   - sudo Rscript -e "install.packages(c('argparse','yaml','zoo'), repos='http://cran.us.r-project.org')"
   - sudo Rscript -e "install.packages('gada', repos='http://R-Forge.R-project.org')"

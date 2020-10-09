@@ -1,4 +1,4 @@
-#!/usr/bin/env /software/bin/Rscript
+#!/usr/bin/env Rscript
 library(ggplot2)
 library(argparse)
 

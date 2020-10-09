@@ -13,8 +13,8 @@
 #include <string.h>
 #include <stdio.h>
 #include <unistd.h>
-#include "htslib-1.3/htslib/sam.h" 
-#include "samtools.h"
+#include <htslib/sam.h> 
+#include "samtools-1.3/samtools.h"
 
 // Some fixed cut-offs used for the B allele (baf) calculation
 const int 	pileup_depth_min_threshold	= 7;

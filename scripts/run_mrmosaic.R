@@ -1,4 +1,4 @@
-#!/usr/bin/env /software/R-3.3.0/bin/Rscript
+#!/usr/bin/env Rscript
 
 VERSION=0.1
 

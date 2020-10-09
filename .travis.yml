@@ -3,6 +3,6 @@ compiler:
   - gcc
 install:
   - sudo apt-get install -qq r-base
-  - Rscript -e "install.packages(c('argparse','yaml','zoo'), repos='http://cran.us.r-project.org')"
-  - Rscript -e "install.packages('gada', repos='http://R-Forge.R-project.org')"
+  - sudo Rscript -e "install.packages(c('argparse','yaml','zoo'), repos='http://cran.us.r-project.org')"
+  - sudo Rscript -e "install.packages('gada', repos='http://R-Forge.R-project.org')"
 

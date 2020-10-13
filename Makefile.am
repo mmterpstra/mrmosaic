@@ -1,6 +1,7 @@
 SUBDIRS = src scripts
 dist_doc_DATA = README
-install:
+
+install-r:
 	Rscript -e 'install.packages("mrmosaic", repos=NULL, type="source")'
 clean-local:
 	@rm config.status configure config.log

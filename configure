@@ -2900,6 +2900,8 @@ ac_compile='$CC -c $CFLAGS $CPPFLAGS conftest.$ac_ext >&5'
 ac_link='$CC -o conftest$ac_exeext $CFLAGS $CPPFLAGS $LDFLAGS conftest.$ac_ext $LIBS >&5'
 ac_compiler_gnu=$ac_cv_c_compiler_gnu
 
+#note the src Makefile.am also has some compile flags enabled
+#this is not best practice but thats why I put this comment here
 
 # Checks for libraries.
 

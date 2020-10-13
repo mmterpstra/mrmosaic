@@ -6,4 +6,8 @@ install:
   - sudo apt-get install -qq r-base
   - sudo Rscript -e "install.packages(c('argparse','yaml','zoo'), repos='http://cran.us.r-project.org')"
   - sudo Rscript -e "install.packages('gada', repos='http://R-Forge.R-project.org')"
-
+  - sudo Rscript -e "install.packages('gada', repos='http://R-Forge.R-project.org')"
+  - sudo Rscript -e 'install.packages("mrmosaic", repos=NULL, type="source")'
+  - sudo apt-get install -qq samtools
+  - sudo apt-get install -qq libhts-dev
+  - autoreconf -f -i 

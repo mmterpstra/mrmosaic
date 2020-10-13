@@ -12,6 +12,8 @@ AC_CONFIG_HEADERS([config.h])
 
 # Checks for programs.
 AC_PROG_CC
+#note the src Makefile.am also has some compile flags enabled
+#this is not best practice but thats why I put this comment here
 
 # Checks for libraries.
 

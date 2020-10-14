@@ -24,7 +24,12 @@ AC_CHECK_HEADERS([stdlib.h string.h unistd.h])
 AC_TYPE_INT8_T
 
 # Checks for library functions.
+htslib_lib=ok
+AC_CHECK_LIB(hts, hts_itr_next,  [], [htslib_lib=missing])
+if test $htslib_lib != ok; then
+  AC_MSG_ERROR([htslib library files not found])
+fi
 
-#AC_CONFIG_SUBDIRS([scripts])
+#AC_CONFIG_SUBDIRS([samtools-1.3])
 AM_INIT_AUTOMAKE
 AC_OUTPUT

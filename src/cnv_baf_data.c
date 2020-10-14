@@ -13,7 +13,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <unistd.h>
-#include "../samtools-1.3/htslib/sam.h" 
+#include "../samtools-1.3/htslib-1.3/htslib/sam.h" 
 #include "../samtools-1.3/samtools.h"
 
 // Some fixed cut-offs used for the B allele (baf) calculation

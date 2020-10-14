@@ -182,7 +182,7 @@ INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LDFLAGS = 
 LIBOBJS = 
-LIBS = 
+LIBS = -lhts 
 LTLIBOBJS = 
 MAKEINFO = ${SHELL} /data/umcg-mterpstra/umcg-oncogenetics/git/mrmosaic/missing makeinfo
 MKDIR_P = /usr/bin/mkdir -p
@@ -242,7 +242,7 @@ top_build_prefix = ../
 top_builddir = ..
 top_srcdir = ..
 cnvbafdata_SOURCES = cnv_baf_data.c
-cnvbafdata_CFLAGS = -O3 -Wall -Isrc -I. -I../samtools-1.3/htslib-1.3/htslib -I../samtools-1.3/htslib-1.3 -I../samtools-1.3 -rdynamic -lhts -lpthread -lz -lm
+cnvbafdata_CFLAGS = -O3 -Wall -I../samtools-1.3 -I../samtools-1.3/htslib-1.3/htslib -I../samtools-1.3/htslib-1.3 -I../samtools-1.3 -rdynamic -L../samtools-1.3/htslib-1.3/ -L../samtools-1.3/ -L../samtools-1.3/htslib-1.3/htslib -lhts -lbam -lpthread -lz -lm
 all: all-am
 
 .SUFFIXES:

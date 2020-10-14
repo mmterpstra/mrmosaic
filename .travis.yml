@@ -1,6 +1,16 @@
 language: c
 compiler:
   - gcc
+# For linux systems
+addons:
+  apt:
+    packages:
+    - liblzma-dev
+    - libbz2-dev
+    - samtools
+    - libhts-dev
+    - automake
+    - r-base
 install:
   - sudo apt-get install -qq automake
   - sudo apt-get install -qq r-base
@@ -8,8 +18,6 @@ install:
   - sudo Rscript -e "install.packages('gada', repos='http://R-Forge.R-project.org')"
   - sudo Rscript -e "install.packages('gada', repos='http://R-Forge.R-project.org')"
   - sudo Rscript -e 'install.packages("mrmosaic", repos=NULL, type="source")'
-  - sudo apt-get install -qq samtools
-  - sudo apt-get install -qq libhts-dev
 #  - (set -e -x; wget 'https://github.com/samtools/samtools/releases/download/1.3.1/samtools-1.3.1.tar.bz2' &&  tar xf samtools-1.3.1.tar.bz2 && cd samtools-1.3.1/ && make && sudo make install )
   - (cd samtools-1.3 && ./configure && make)
   - autoreconf -f -i 
